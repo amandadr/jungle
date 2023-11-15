@@ -1,4 +1,15 @@
 .cart-show {
+  .cart-empty {
+    width: max-content;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    margin-top: 1.5em;
+  }
+
   tr div {
     width: max-content;
   }
