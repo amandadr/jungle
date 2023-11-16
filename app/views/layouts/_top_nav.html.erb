@@ -34,6 +34,7 @@
             <%# Categories %>
           <%# </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown"> %>
+            <%= link_to about_path, class: "nav-link" do %>About Us<% end %>
             <% Category.all.each do |category| %>
             <li class="nav-item">
               <%= link_to category.name, category, class: "nav-link" %>
