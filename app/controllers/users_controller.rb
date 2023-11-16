@@ -4,10 +4,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if user.save
+    if @user.save
       # If user saves in the db successfully:
-      session[:user_id] = user.id
-      redirect_to '/'
+      session[:user_id] = @user.id
+      redirect_to '/', notice: 'User created!'
     else
       # If user fails model validation - probably a bad password or duplicate email:
       redirect_to '/signup'
@@ -17,6 +17,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password_digest)
+    params.require(:user).permit(:firstName, :surname, :email, :password_digest)
   end
 end
