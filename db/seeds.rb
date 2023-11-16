@@ -168,7 +168,7 @@ cat2.products.create!({
   As a defense mechanism the Krapliper produces a thick, sticky wax.
   They rely on self pollination to reproduce. Once pollinated, they grow fairly large, inedible fruits.",
   image: open_asset('plante_9.jpg'),
-  quantity: 32,
+  quantity: 0,
   price: 1999.99
 })
 
