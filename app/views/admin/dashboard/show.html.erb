@@ -1,13 +1,16 @@
 <section class="dashboard">
-<h1>Admin Dashboard</h1>
 <div class="stats">
-  <div class="stat">
-    <span class="text">Products:</span>
-    <span class="number"><%= @product_count %></span>
-  </div>
-  <div class="stat">
-    <span class="text">Categories:</span>
-    <span class="number"><%= @category_count %></span>
-  </div>
-</div>
-</section>
+  <section class="dashboard">
+    <h1>Admin Dashboard</h1>
+    <table class="stats">
+      <tr>
+        <th>Products:</th>
+        <td><%= @product_count %></td>
+      </tr>
+      <tr>
+        <th>Categories:</th>
+        <td><%= @category_count %></td>
+      </tr>
+    </table>
+    <a href="/admin/products" class="btn btn-success view-products">View All Products</a>
+  </section>

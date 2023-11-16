@@ -2,7 +2,29 @@
   display: flex;
   flex-direction: column;
 }
+
+table {
+  border-collapse: collapse;
+  width: max-content;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  text-align: left;
+  padding: .5em;
+  padding-left: .75em;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
 .text {
   font-weight: 600;
   font-size: 1.1em;
+}
+
+.view-products {
+  margin-top: 1em;
 }
