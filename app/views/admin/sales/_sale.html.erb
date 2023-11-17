@@ -1,7 +1,15 @@
 <tr>
-  <td><%= sale.name %></td>
+  <td colspan="2"><%= sale.name %></td>
   <td><%= sale.starts_on %></td>
   <td><%= sale.ends_on %></td>
-  <td>STATUS</td>
+  <td>
+    <% if sale.finished? %>
+      <button class="btn btn-danger disable">Expired</button>
+    <% elsif sale.upcoming? %>
+      <button class="btn btn-info disable">Upcoming</button>
+    <% else %>
+      <button class="btn btn-success disable">Active</button>
+    <% end %>
+  </td>
   <td><%= sale.percent_off %></td>
 </tr>

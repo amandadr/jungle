@@ -22,9 +22,10 @@ end
 # Let's do this ...
 
 ## SALES
-sale1 = Sale.find_or_create_by! name: 'Winter Sale', percent_off: 20, starts_on: 'Nov 23, 2023', ends_on: 'Jan 23, 2024'
-sale2 = Sale.find_or_create_by! name: 'Summer Sale', percent_off: 10, starts_on: 'Jun 23, 2024', ends_on: 'Aug 24, 2024'
-sale3 = Sale.find_or_create_by! name: 'Spring Sale', percent_off: 15, starts_on: 'Mar 23, 2024', ends_on: 'May 24, 2024'
+sale1 = Sale.find_or_create_by! name: 'Winter Sale', percent_off: 20, starts_on: '2023-12-23', ends_on: '2024-01-24'
+sale2 = Sale.find_or_create_by! name: 'Summer Sale', percent_off: 10, starts_on: '2023-06-23', ends_on: '2023-07-24'
+sale3 = Sale.find_or_create_by! name: 'Spring Sale', percent_off: 15, starts_on: '2023-03-23', ends_on: '2023-04-24'
+sale4 = Sale.find_or_create_by! name: 'Fall Sale', percent_off: 30, starts_on: '2023-09-23', ends_on: '2023-11-24'
 
 ## CATEGORIES
 
