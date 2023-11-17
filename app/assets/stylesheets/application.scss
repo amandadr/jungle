@@ -96,6 +96,7 @@ form.button_to {
   top: 0;
   z-index: 900;
   font-weight: 700;
+  margin-bottom: 1em;
 
   .navbar-brand {
     font-weight: 900;
@@ -103,6 +104,16 @@ form.button_to {
     text-transform: uppercase;
     font-style: italic;
   }
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.username {
+  margin-bottom: .125em;
 }
 
 .page-header {

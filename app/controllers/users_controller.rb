@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  # wrap_parameters :user, include: [:firstName, :surname, :email, :password_digest]
 
   def new
   end
