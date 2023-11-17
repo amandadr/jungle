@@ -21,6 +21,11 @@ end
 
 # Let's do this ...
 
+## SALES
+sale1 = Sale.find_or_create_by! name: 'Winter Sale', percent_off: 20, starts_on: 'Nov 23, 2023', ends_on: 'Jan 23, 2024'
+sale2 = Sale.find_or_create_by! name: 'Summer Sale', percent_off: 10, starts_on: 'Jun 23, 2024', ends_on: 'Aug 24, 2024'
+sale3 = Sale.find_or_create_by! name: 'Spring Sale', percent_off: 15, starts_on: 'Mar 23, 2024', ends_on: 'May 24, 2024'
+
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."

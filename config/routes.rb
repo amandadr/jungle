@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    get 'sales/index'
+  end
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'
@@ -25,6 +28,7 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
     resources :categories, except: [:edit, :update, :show]
+    resources :sales, only: [:index, :new, :create]
   end
 
   get '/about', to: 'about#index'
