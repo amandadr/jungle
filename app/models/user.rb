@@ -1,12 +1,10 @@
 class User < ApplicationRecord
-  include BCrypt
+  has_secure_password
 
-  def password
-    @password ||= Password.new(password_hash)
-  end
+  validates :firstName, :surname, :email, :password, presence: true
+  validates :email, uniqueness: true
 
-  def password=(new_password)
-    @password = Password.create(new_password)
-    self.password_hash = @password
+  def full_name
+    "#{firstName} #{surname}"
   end
 end
