@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 2023_11_17_015621) do
   create_table "sales", force: :cascade do |t|
     t.string "name"
     t.string "percent_off"
-    t.date "starts_on"
-    t.date "ends_on"
+    t.string "starts_on"
+    t.string "ends_on"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
