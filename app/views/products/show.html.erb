@@ -13,17 +13,17 @@
         <span><%= humanized_money_with_symbol @product.price %></span>
       </div>
 
-      <% if @product.quantity > 0 %>
+      <% if @product.soldout? %>
+      <div class="price">          
+        <button class="btn soldout" disabled="disabled">
+          Sold Out
+        </button>
+      </div>
+      <% else %>
         <div class="price">          
           <%= button_to add_item_cart_path(product_id: @product.id), class: 'btn' , method: :post do %>
             <%= fa_icon "shopping-cart", text: 'Add' %>
           <% end %>          
-        </div>
-      <% else %>
-        <div class="price">          
-          <button class="btn soldout" disabled="disabled">
-            Sold Out
-          </button>
         </div>
       <% end %>
     </div>

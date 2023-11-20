@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  def new
-  end
 
   def create
     user = User.find_by_email(params[:email])
@@ -11,7 +9,7 @@ class SessionsController < ApplicationController
       # redirect_to '/'
       redirect_to root_path
     else
-    # If user's login doesn't work, send them back to the login form.
+    # If user's login doesn't work, send them back to the lo2gin form.
       redirect_to '/login'
     end
   end
