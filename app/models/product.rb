@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   belongs_to :category
 
   validates :name, presence: true
-  validates :price, presence: true
+  validates :price, presence: true, format: { with: /\A\d+(?:\.\d{2})?\z/ }
   validates :quantity, presence: true
   validates :category, presence: true
 
