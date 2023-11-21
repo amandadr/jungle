@@ -7,15 +7,15 @@ describe('Home', () => {
     cy.get(".title h3").should(
       "have.text",
       "Welcome to"
-    );
+    )
   })
 
   it('displays the title h1', () => {
-    cy.get(".title h1").should("have.text", "The Jungle");
+    cy.get(".title h1").should("have.text", "The Jungle")
   })
 
   it('displays the title h2', () => {
-    cy.get(".title h2").should("have.text", "Where you can find any plants!");
+    cy.get(".title h2").should("have.text", "Where you can find any plants!")
   })
 
   it('displays the categories', () => {
@@ -27,6 +27,6 @@ describe('Home', () => {
   })
 
   it("shows products on the page", () => {
-    cy.get(".products article").should("be.visible");
-  });
+    cy.get(".products article").should("be.visible")
+  })
 })
