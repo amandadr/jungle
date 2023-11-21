@@ -13,7 +13,7 @@
     <button class="btn soldout" disabled="disabled">
       Sold Out
     </button>
-    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' , disabled: true ,
+    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn add-to-cart' , disabled: true ,
     method: :post do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>
@@ -21,7 +21,7 @@
     </div>
   <% else %>
    <div>
-    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
+    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn add-to-cart' ,
     method: :post do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>

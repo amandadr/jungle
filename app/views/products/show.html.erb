@@ -21,7 +21,7 @@
       </div>
       <% else %>
         <div class="price">          
-          <%= button_to add_item_cart_path(product_id: @product.id), class: 'btn' , method: :post do %>
+          <%= button_to add_item_cart_path(product_id: @product.id), class: 'btn product-add-to-cart' , method: :post do %>
             <%= fa_icon "shopping-cart", text: 'Add' %>
           <% end %>          
         </div>
