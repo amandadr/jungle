@@ -7,6 +7,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('before:browser:launch', (browser = {}, launchOptions) => {
         /* ... */
+        projectId: "29ghwv"
       })
     },
   },
