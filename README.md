@@ -20,10 +20,10 @@ As a fresh dev on the Jungle app team I was asked to implement the following fea
 <img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
 
 ### Cart + Order 
-<img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
+<img src="https://github.com/amandadr/jungle/blob/master/docs/cart-order.gif?raw=true" width="750" height="auto"/>
 
 ### Admin Dashboard + Admin Categories
-<img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
+<img src="https://github.com/amandadr/jungle/blob/master/docs/admin-categories.gif?raw=true" width="750" height="auto"/>
 
 ## Setup
 
