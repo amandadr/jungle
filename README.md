@@ -16,11 +16,14 @@ As a fresh dev on the Jungle app team I was asked to implement the following fea
 - Automated testing: setup product and user model specs using RSpec; and test the home, product details, and cart pages using Cypress integration.
 
 ## Features and Screenshots
-Homepage + Product Details
+### Homepage + Product Details
+<img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
 
-Cart + Order Details
+### Cart + Order 
+<img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
 
-Admin Dashboard + Admin Categories
+### Admin Dashboard + Admin Categories
+<img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
 
 ## Setup
 
