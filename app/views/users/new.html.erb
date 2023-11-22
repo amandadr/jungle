@@ -3,8 +3,8 @@
   <p><%= flash[:notice] %></p>
 <% end %>
 
+<%= form_for :user, url: '/users' do |f| %>
 <table class:"table table-bordered">
-  <%= form_for :user, url: '/users' do |f| %>
   <tr>
     <th>First Name:</th>
     <th><%= f.text_field :firstName %><br></th>
