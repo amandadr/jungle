@@ -3,12 +3,28 @@
   <p><%= flash[:notice] %></p>
 <% end %>
 
-<%= form_for :user, url: '/users' do |f| %>
-  First Name: <%= f.text_field :firstName %><br>
-  Last Name: <%= f.text_field :surname %><br>
-  Email: <%= f.text_field :email %><br>
-  Password: <%= f.password_field :password %><br>
-  Confirm Password: <%= f.password_field :password_confirmation %><br>
-  <%= f.submit "Submit" %>
-
+<table class:"table table-bordered">
+  <%= form_for :user, url: '/users' do |f| %>
+  <tr>
+    <th>First Name:</th>
+    <th><%= f.text_field :firstName %><br></th>
+  </tr>
+  <tr>
+    <th>Last Name:</th>
+    <th><%= f.text_field :surname %><br></th>
+  </tr>
+  <tr>
+    <th>Email:</th>
+    <th><%= f.text_field :email %><br></th>
+  </tr>
+  <tr>
+    <th>Password:</th>
+    <th><%= f.password_field :password %><br></th>
+  </tr>
+  <tr>
+    <th>Password Confirmation:</th>
+    <th><%= f.password_field :password_confirmation %><br></th>
+  </tr>
+</table>
+<%= f.submit class: 'btn btn-success btn-new' %>
 <% end %>

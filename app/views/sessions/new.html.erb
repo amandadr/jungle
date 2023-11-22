@@ -1,8 +1,15 @@
 <h1>Login</h1>
 
 <%= form_tag '/login' do %>
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
+<table class:"table table-bordered">
+  <tr>
+    <th>Email:</th>
+    <th><%= text_field_tag :email %><br></th>
+  </tr>
+  <tr>
+    <th>Password:</th>
+    <th><%= password_field_tag :password %><br></th>
+  </tr>
+</table>
+<%= submit_tag "Login", class: 'btn btn-success btn-new' %>
 <% end %>
