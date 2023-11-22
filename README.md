@@ -5,7 +5,8 @@ Welcome to the Jungle!
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example from this boilerplate: https://github.com/lighthouse-labs/jungle-rails/
 
 ## My Contributions
-As a fresh dev on the Jungle app team I was asked to implement the following features during my onboarding week:
+As a fresh dev on the Jungle app team I was asked to implement the following features throughout my onboarding week:
+- An about page to get acquainted
 - A sold out badge for products with no stock quantity, which disables add to cart
 - An active sale banner which displays on every page
 - Appropriate empty cart page
@@ -19,7 +20,7 @@ As a fresh dev on the Jungle app team I was asked to implement the following fea
 ### Homepage + Product Details
 <img src="https://github.com/amandadr/jungle/blob/master/docs/homepage-product.gif?raw=true" width="750" height="auto"/>
 
-### Cart + Order 
+### Cart + Order Details
 <img src="https://github.com/amandadr/jungle/blob/master/docs/cart-order.gif?raw=true" width="750" height="auto"/>
 
 ### Admin Dashboard + Admin Categories
